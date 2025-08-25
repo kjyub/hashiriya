@@ -4,9 +4,9 @@ import Header from '@/components/common/Header';
 
 export default function RootLayout() {
   return (
-    <div>
+    <div className="min-h-dvh">
       <Header />
-      <main className="p-6">
+      <main>
         <Outlet />
       </main>
     </div>

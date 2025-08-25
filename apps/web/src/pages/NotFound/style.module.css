@@ -1,0 +1,51 @@
+@keyframes fuzzy-1 {
+  0%,
+  33%,
+  100% {
+    filter: blur(0px);
+    text-shadow: 0 0 0 transparent;
+  }
+  16% {
+    filter: blur(2px);
+    text-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes fuzzy-2 {
+  0%,
+  33%,
+  66%,
+  100% {
+    filter: blur(0px);
+    text-shadow: 0 0 0 transparent;
+  }
+  50% {
+    filter: blur(2px);
+    text-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes fuzzy-3 {
+  0%,
+  66%,
+  100% {
+    filter: blur(0px);
+    text-shadow: 0 0 0 transparent;
+  }
+  83% {
+    filter: blur(2px);
+    text-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+  }
+}
+
+.fuzzy-animation-1 {
+  animation: fuzzy-1 5s ease-in-out infinite;
+}
+
+.fuzzy-animation-2 {
+  animation: fuzzy-2 5s ease-in-out infinite;
+}
+
+.fuzzy-animation-3 {
+  animation: fuzzy-3 5s ease-in-out infinite;
+}

@@ -7,3 +7,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+@layer utilities {
+  .page {
+    @apply p-6 max-md:min-h-dvh md:min-h-[calc(100dvh-3.5rem)];
+  }
+}

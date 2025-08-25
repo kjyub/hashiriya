@@ -1,6 +1,8 @@
+import { createBrowserRouter } from 'react-router-dom';
+
 import RootLayout from '@/layouts/RootLayout';
 import Home from '@/pages/Home';
-import { createBrowserRouter } from 'react-router-dom';
+import NotFound from '@/pages/NotFound';
 
 export const router = createBrowserRouter([
   {
@@ -33,7 +35,7 @@ export const router = createBrowserRouter([
       //   },
 
       //   { path: 'login', element: <Login /> },
-      //   { path: '*', element: <NotFound /> }, // 404
+      { path: '*', element: <NotFound /> }, // 404
     ],
   },
 ]);
