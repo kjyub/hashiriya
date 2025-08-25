@@ -1,18 +1,11 @@
-// styles
-// import '@/styles/globals.css';
+import { Outlet } from 'react-router-dom';
 
-import { NavLink, Outlet } from 'react-router-dom';
+import Header from '@/components/common/Header';
 
 export default function RootLayout() {
   return (
     <div>
-      <header className="p-4 border-b">
-        <nav className="flex gap-4">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/dashboard">Dashboard</NavLink>
-        </nav>
-      </header>
+      <Header />
       <main className="p-6">
         <Outlet />
       </main>
