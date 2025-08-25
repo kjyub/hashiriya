@@ -1,0 +1,36 @@
+{
+  "name": "hashiriya",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "clean": "turbo clean",
+    "test": "turbo test",
+    "storybook": "turbo storybook",
+    "build-storybook": "turbo build-storybook"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.33.0",
+    "@types/node": "^22.7.4",
+    "@typescript-eslint/eslint-plugin": "^8.39.1",
+    "@typescript-eslint/parser": "^8.39.1",
+    "eslint": "^9.33.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-better-tailwindcss": "3.7.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "16.3.0",
+    "prettier": "^3.6.2",
+    "turbo": "^2.0.14",
+    "typescript-eslint": "8.39.1"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

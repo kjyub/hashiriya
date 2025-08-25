@@ -1,0 +1,14 @@
+**/node_modules/**
+**/dist/**
+**/.vinxi/**
+**/coverage/**
+**/storybook-static/**
+**/*.gen.ts
+**/*.gen.js
+**/routeTree.gen.ts
+pnpm-lock.yaml
+.turbo/**
+**/.turbo/**
+**/tsconfig.tsbuildinfo
+
+

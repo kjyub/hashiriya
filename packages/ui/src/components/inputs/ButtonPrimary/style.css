@@ -1,0 +1,3 @@
+.gradient {
+  background: linear-gradient(to right, var(--color-primary_button-1), var(--color-primary_button-2));
+}

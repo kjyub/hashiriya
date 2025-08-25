@@ -1,0 +1,10 @@
+.ds-checkbox-gradient {
+  background: linear-gradient(
+    to top,
+    var(--color-b_style-1) 5%,
+    var(--color-b_style-2) 12.5%,
+    var(--color-b_style-3) 25%,
+    var(--color-b_style-4) 50%,
+    transparent 50%
+  );
+}

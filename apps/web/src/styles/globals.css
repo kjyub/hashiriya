@@ -1,0 +1,9 @@
+@import '@ui/styles/globals.css';
+
+body {
+  @apply font-paperlogy;
+  background: linear-gradient(150deg, #201a3a, #20217c) fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
