@@ -1,5 +1,6 @@
 import { cva } from 'class-variance-authority';
 import { useRef, type ButtonHTMLAttributes, type ReactNode, type RefObject } from 'react';
+
 import { cn } from '../../../utils';
 import FocusMarker from '../FocusMarker';
 import useFocusMarker from '../FocusMarker/useFocusMarker';
@@ -13,7 +14,7 @@ export interface ButtonPrimaryProps extends ButtonHTMLAttributes<HTMLButtonEleme
 const variants = cva(
   [
     'relative flex flex-center w-48 h-10',
-    'txt-light font-light text-white disabled:text-white/50',
+    'font-light text-white disabled:text-white/50',
     'gradient',
     '[&_.active-gradient]:translate-x-0 hover:[&_.active-gradient]:translate-x-[42%] active:[&_.active-gradient]:translate-x-[44%]',
     'hover:[&_.light]:w-[120%] active:[&_.light]:w-[125%] disabled:[&_.light]:opacity-0',
@@ -37,7 +38,9 @@ export function ButtonPrimary({ children, className, ref: externalRef, ...props 
   return (
     <button ref={ref} {...props} className={cn(variants({ variant: 'default' }), 'input-container', className)}>
       <FocusMarker isFocus={isFocus} color="yellow">
-        <div className="absolute z-10 flex flex-center size-full p-2">{children}</div>
+        <div className="absolute z-10 flex flex-center size-full p-2 text-shadow-lg text-shadow-black/20">
+          {children}
+        </div>
 
         {/* 스타일 효과 */}
         <div
