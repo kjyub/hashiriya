@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+
 import { cn } from 'src/utils';
+
 import useToastMessageStore, {
   TOAST_MESSAGE_ANIMATION_DURATION,
   TOAST_MESSAGE_DURATION,
@@ -55,9 +57,9 @@ export const ToastMessage = ({ message }: { message: ToastMessageType }) => {
           onClick={handleClose}
           type="button"
         >
-          <div className="aspect-square h-full [clip-path:polygon(100%_0,0_100%,100%_100%)]" />
+          <div className="aspect-square h-full [clip-path:polygon(100%_0,40%_100%,100%_100%)]" />
           <div className="flex flex-center size-full"></div>
-          <i className="absolute right-3 fa-solid fa-xmark" />
+          <i className="absolute right-2 fa-solid fa-xmark" />
         </button>
       </div>
     </div>
