@@ -6,7 +6,7 @@ export default function RootLayout() {
   return (
     <div className="min-h-dvh">
       <Header />
-      <main>
+      <main className="flex flex-col items-center">
         <Outlet />
       </main>
     </div>

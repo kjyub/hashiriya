@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import RootLayout from '@/layouts/RootLayout';
-import Home from '@/pages/Home';
 import NotFound from '@/pages/NotFound';
+import ScheduleListPage from '@/pages/schedule/ScheduleListPage';
 
 export const router = createBrowserRouter([
   {
@@ -10,7 +10,8 @@ export const router = createBrowserRouter([
     element: <RootLayout />,
     // errorElement: <NotFound />, // 루트 에러 경계
     children: [
-      { index: true, element: <Home /> },
+      { index: true, element: <ScheduleListPage /> },
+      { path: 'schedule', element: <ScheduleListPage /> },
       //   { path: 'about', element: <About /> },
 
       // 보호 라우트 예시

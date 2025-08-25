@@ -10,6 +10,9 @@ body {
 
 @layer utilities {
   .page {
-    @apply p-6 max-md:min-h-dvh md:min-h-[calc(100dvh-3.5rem)];
+    @apply p-6 max-w-5xl max-lg:w-full lg:w-5xl max-md:min-h-dvh md:min-h-[calc(100dvh-3.5rem)];
+  }
+  .page .header {
+    @apply flex items-center h-34 [&_h1]:text-3xl [&_h1]:font-light [&_h1]:text-white;
   }
 }
