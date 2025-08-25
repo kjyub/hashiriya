@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 import RootLayout from '@/layouts/RootLayout';
 import NotFound from '@/pages/NotFound';
+import ScheduleEditPage from '@/pages/schedule/ScheduleEditPage';
 import ScheduleListPage from '@/pages/schedule/ScheduleListPage';
 
 export const router = createBrowserRouter([
@@ -12,6 +13,8 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <ScheduleListPage /> },
       { path: 'schedule', element: <ScheduleListPage /> },
+      { path: 'schedule/write', element: <ScheduleEditPage /> },
+      { path: 'schedule/edit/:id', element: <ScheduleEditPage /> },
       //   { path: 'about', element: <About /> },
 
       // 보호 라우트 예시

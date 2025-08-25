@@ -1,4 +1,5 @@
 import { ButtonPrimary, InputContainer } from '@ui';
+import { Link } from 'react-router';
 
 export default function ScheduleList() {
   return (
@@ -11,7 +12,9 @@ export default function ScheduleList() {
             <i className="fa-solid fa-magnifying-glass" />
           </button>
         </InputContainer>
-        <ButtonPrimary className="h-9">스케줄 추가</ButtonPrimary>
+        <Link to="/schedule/write">
+          <ButtonPrimary className="h-9">스케줄 추가</ButtonPrimary>
+        </Link>
       </div>
 
       {/* 스케줄 리스트 */}
