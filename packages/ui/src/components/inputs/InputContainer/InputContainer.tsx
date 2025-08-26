@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 
-import { cn } from 'src/utils';
+import { cn } from '../../../utils';
 
 import type { ReactNode } from 'react';
 

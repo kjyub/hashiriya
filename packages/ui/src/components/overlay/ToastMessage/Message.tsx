@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { cn } from 'src/utils';
+import { cn } from '../../../utils';
 
 import useToastMessageStore, {
   TOAST_MESSAGE_ANIMATION_DURATION,

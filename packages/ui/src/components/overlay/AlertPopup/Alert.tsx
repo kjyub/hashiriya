@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { ButtonPrimary } from 'src/components/inputs';
+import { ButtonPrimary } from '../../inputs';
 import { Modal } from '../Modal';
-import { SystemMessage } from './store';
+import type { SystemMessage } from './store';
 
 export default function Alert({ message, onConfirm }: { message: SystemMessage; onConfirm: () => void }) {
   const confirmButtonRef = useRef<HTMLButtonElement>(null);

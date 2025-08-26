@@ -1,6 +1,8 @@
 import { createContext, useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { cn } from 'src/utils';
+
+import { cn } from '../../../utils';
+
 import useToastMessageStore, { TOAST_MESSAGE_DURATION } from '../ToastMessage/store';
 
 export const ModalPortalContext = createContext<{
@@ -52,7 +54,7 @@ interface Props {
   zIndex?: number;
   children: React.ReactNode;
 }
-export default function ModalContainer({
+export default function ModalPortal({
   isOpen,
   onClose,
   isEscClose = true,

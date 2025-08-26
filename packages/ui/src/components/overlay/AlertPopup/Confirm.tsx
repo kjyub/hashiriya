@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
-import { Button, ButtonPrimary } from 'src/components/inputs';
+import { Button, ButtonPrimary } from '../../inputs';
 import { Modal } from '../Modal';
-import { SystemMessage } from './store';
+import type { SystemMessage } from './store';
 
 export default function Confirm({
   message,

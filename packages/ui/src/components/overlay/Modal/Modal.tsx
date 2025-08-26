@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 import { use, type HTMLAttributes } from 'react';
-import { cn } from 'src/utils';
+import { cn } from '../../../utils';
 import { Button } from '../../inputs/Button';
 import { ModalPortalContext } from '../ModalPortal';
 import './style.css';

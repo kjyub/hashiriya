@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 import type { InputHTMLAttributes } from 'react';
-import { cn } from 'src/utils';
+import { cn } from '../../../utils';
 import './style.css';
 
 export interface CheckBoxProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'type'> {
